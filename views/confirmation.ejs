@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <title>This is a form entry</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="./javascripts/mailer.js"></script>
+    
+</head>
+<body>
+    <header>
+        <p><span id="focus">WebApp</span> Final Project</p>
+    </header>
+    
+    <div class ="container">
+        <a class="btn hvr-sweep-to-bottom" role = "button">Sign in to access all contacts</a> 
+        <% include login %>    
+        
+        <section id="confirm">
+            <p>Your information has been successfully updated.</p>
+        </section>
+        <div id ="information">
+            <p>Name: <%= contact.suffix%> <%= contact.first%> <%= contact.last%></p>
+            <p>Address: <%= contact.street%>, <%= contact.city%>, <%= contact.state%>, <%= contact.zip%></p>
+        </div>
+
+    </div>
+</body>
+</html>

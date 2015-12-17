@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,500italic,700,300,300italic,400italic);
+
+    
+@buttonColor: #FF5A09;
+@headerColor: #FF5A09;
+@buttonOnHover: #F3843E;
+@instructionColor: #6E6E6E;
+@textBg: #FF9900;
+@bgColor: #333333;
+@defaultPadding: 1em;
+@warning: #D84830;
+
+@import url('./hover.css');
+
+.setBorderRadius() {
+    border-radius: 5px;
+}
+
+body {
+    background-color: @bgColor;
+    font-family: 'Ubuntu';
+    color: white;
+}
+
+#forming {
+    padding-bottom: 10px;
+}
+
+#map-canvas {
+    width:100%;
+    height:500px;
+    color: black;
+}
+
+div{
+    padding: @defaultPadding;
+}
+
+
+header {
+    background-color: @headerColor;
+    padding-top: @defaultPadding ;
+    width: 100%;
+    color: white;
+    p {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    #focus {
+        font-size: 40px;
+    }
+    
+    #loggedin {
+        font-size: medium;
+        text-align: right;
+        color: @instructionColor;
+        padding:0;
+        padding-right: @defaultPadding;  
+        
+        a {
+            color: white;
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: @buttonColor;
+}
+
+a:hover, a:active {
+    color: @buttonOnHover;
+}
+
+
+.btn {
+    background: @buttonColor;
+    color: white;   
+}
+
+.table-hover:hover {
+    background-color: @instructionColor;
+}
+
+.container {
+    background-color: @bgColor;
+}
+
+
+.form-inline, table {
+    color: white;
+    
+    #state {
+        color: @instructionColor;
+    }
+}
+
+#errors {
+    background-color: @warning;
+    .setBorderRadius();
+}
+#confirm p {
+    background-color: @textBg;
+    .setBorderRadius();
+    padding: 1.5em;
+    color: @instructionColor;
+}
+
+#login {
+    text-align: center;
+    background-color: lighten(@textBg,10%);
+    margin-top: @defaultPadding;
+    color: darken(@instructionColor,20%);
+    .setBorderRadius();
+}
+
+#logout {
+    margin-left: 15px;
+}
