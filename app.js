@@ -11,7 +11,7 @@ var routes = require('./routes/index');
 var db = require('./routes/database.js');
 
 
-var bcrypt = require('bcrypt');
+var bcrypt = require('bcryptjs');
 var username = db.getUserName();
 var password = db.getPassword();
 

@@ -20,9 +20,13 @@
     "node-geocoder": "*",
     "serve-favicon": "~2.3.0",
     "method-override" : "~1.0.0", 
-    "bcrypt" : "latest" , 
+    "bcryptjs" : "*" , 
     "passport" : "~0.1.17",     
     "passport-local" : "~0.1.6", 
-    "connect-flash" : "latest"
+    "connect-flash" : "*",
+    "path":"*",
+    "passport": "*",
+    "express-session": "*"
+    
   }
 }
